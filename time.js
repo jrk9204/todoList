@@ -1,12 +1,8 @@
 const startTag = document.querySelector(".js-basic");
-const clockTag = document.createElement("h1");
+const clockTag = document.createElement("div");
+clockTag.classList.add("displayClock");
 clockTag.textContent = "00:00:00";
 startTag.appendChild(clockTag);
-
-const test = document.createElement("h1");
-test.textContent = "added";
-
-startTag.classList.add("test");
 
 const getTime = () => {
   const date = new Date();
