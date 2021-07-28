@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div {
+  color: #34495e;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.inputTag,
+.todoTag {
+  background-color: #ecf0f1;
+  font-size: 4rem;
+  width: 10em;
+  height: 2em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+
+.js-info,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+.delbtn {
+  color: red;
+  font-weight: bold;
+}
