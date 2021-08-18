@@ -1,9 +1,9 @@
 const todoForm = document.querySelector(".js-todo");
 const todoInput = todoForm.querySelector(".todoTag");
 const todoList = document.querySelector(".js-toDoList");
-
 const getTodo = "getTodo";
 const showingForm = "showing";
+
 let todoArr = [];
 
 const handleTodoSubmit = (event) => {
@@ -37,9 +37,10 @@ const deleteTodo = (event) => {
 const printTodo = (content) => {
   const newInput = document.createElement("li");
   const span = document.createElement("span");
-  const delbtn = document.createElement("button");
+  const delbtn = document.createElement("span");
   const newId = todoArr.length + 1;
   newInput.id = newId;
+  newInput.classList.add("inputList");
   delbtn.classList.add("delbtn");
   delbtn.textContent = "X";
   delbtn.addEventListener("click", deleteTodo);
